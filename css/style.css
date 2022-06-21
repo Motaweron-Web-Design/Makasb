@@ -207,6 +207,7 @@ header .navTop .navTopLink .nav-item .nav-link.active , header .navTop .navTopLi
     position: relative;
     overflow: hidden;
     z-index: -2;
+    height: 231px;
 }
 .servicesBox >div{
     padding: 20px 15px 5px;
@@ -277,6 +278,11 @@ footer{
 }
 .linkFooter svg{
     color: var(--blue-main);
+
+}
+.footerBox ul li svg{
+    cursor: pointer;
+    color: var(--blue-main);
 }
 .linkMove{
     font-size: 16px;
@@ -290,6 +296,9 @@ footer{
 .linkFooter .linkMove:hover{
     color: var(--blue-main);
     left: 2.5rem;
+}
+.z{
+    padding-top: 32px;
 }
 /* media query */
 @media(max-width:991px){
