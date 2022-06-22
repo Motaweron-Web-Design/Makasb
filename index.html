@@ -1,661 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makasb</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-  </head>
 
-  <body>
-    <div class="scrollTop">
-      <i class="fa-solid fa-angle-up"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Makasb</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+</head>
+
+<body>
+  <div class="scrollTop">
+    <i class="fa-solid fa-angle-up"></i>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light navTop">
+      <div class="container">
+        <a class="navbar-brand logo" href="#"><img class="LogoBrand" src="img/logo.png" alt="" /></a>
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-3 mb-lg-0 navTopLink">
+            <li class="nav-item">
+              <a class="nav-link active me-3" data-scroll="Home" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" data-scroll="Services" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" data-scroll="About" href="#">About Us</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" data-scroll="Features" href="#">Features</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" data-scroll="coins" href="#">coins</a>
+            </li>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Select Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar nav2 forAll">
+      <div class="container">
+        <img class="LogoNav2" src="img/logo.png" alt="" />
+        <form action="" class="Login">
+          <div class="filedLogin">
+            <input type="email" placeholder="Email" id="email" />
+            <input type="password" placeholder="Password" />
+            <button class="siadeButton"><a href="">Login </a></button>
+          </div>
+          <div class="remember d-flex justify-content-between">
+            <div>
+              <input type="checkbox" id="remember" />
+              <label class="text-black-50" for="remember">Remember</label>
+            </div>
+            <a class="text-black-50" href="#">Forget password?</a>
+          </div>
+        </form>
+        <div>
+          <button class="mainButton X"><a href="">Registration </a></button>
+        </div>
+      </div>
+    </nav>
+    <!-- for Mobile W-769 -->
+    <div class="LoginRight">
+      <div class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <form action="" class="Login formRight">
+        <div class="filedLogin">
+          <input type="email" placeholder="Email" id="email" class="mb-2" />
+          <input type="password" placeholder="Password" class="mb-1" />
+          <div class="mb-3 ms-3">
+            <a class="text-black-50 fs-6" href="#">Forget password?</a>
+          </div>
+          <button class="siadeButton"><a href="">Login </a></button>
+        </div>
+
+      </form>
     </div>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light navTop">
-        <div class="container">
-          <a class="navbar-brand logo" href="#"
-            ><img class="LogoBrand" src="img/logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            id="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-3 mb-lg-0 navTopLink">
-              <li class="nav-item">
-                <a class="nav-link active me-3" data-scroll="Home" aria-current="page" href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-3" data-scroll="Services" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-3"data-scroll="About" href="#">About Us</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link" data-scroll="Features" href="#">Features</a>
-              </li>
-              <li class="nav-item me-5">
-                <a class="nav-link" data-scroll="coins" href="#">coins</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Select Language
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">English</a></li>
-                  <li><a class="dropdown-item" href="#">Arabic</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <nav class="navbar nav2">
-        <div class="container">
+    <nav class="navbar nav2 MobileNav">
+      <div class="container">
+        <div>
           <img class="LogoNav2" src="img/logo.png" alt="" />
-          <form action="" class="Login">
-            <div class="filedLogin">
-              <input type="email" placeholder="Email" id="email" />
-              <input type="password" placeholder="Password" />
-              <button class="siadeButton"><a href="">Login </a></button>
-            </div>
-            <div class="remember d-flex justify-content-between">
-              <div>
-                <input type="checkbox" id="remember" />
-                <label class="text-black-50" for="remember">Remember</label>
-              </div>
-              <a class="text-black-50" href="#">Forget password?</a>
-            </div>
-          </form>
-          <div>
-            <button class="mainButton X"><a href="">Registration </a></button>
-          </div>
         </div>
-      </nav>
-      <!--  -->
-    </header>
-    <section class="section" id="Home">
-      <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide container"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            class="active"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div
-            class="row carousel-item active align-items-center justify-content-center"
-            data-bs-interval="30000"
-          >
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-              <img src="img/FOMO-cuate.svg" alt="" />
-            </div>
-            <div class="col-md-6 col-sm-12 homeInfo">
-              <h1 class="fs-4 fw-bold">
-                <span class="Makasb fs-2">Makasb</span> is a network that will
-                help you grow your social presence.
-              </h1>
-              <p class="fs-6 mt-lg-3 lh-base">
-                We allow you to look and choose who you want to
-                <span class="social fs-5">like</span> -
-                <span class="social fs-5">subscribe</span> -
-                <span class="social fs-5">follow</span> -
-                <span class="social fs-5">view</span> and skip those who you are
-                not interested in.
-              </p>
-              <button class="mainButton mb-5 mt-lg-3">
-                <a href="">Registration</a>
-              </button>
-            </div>
-          </div>
-          <!--  -->
-          <div
-            class="row carousel-item align-items-center justify-content-center"
-            data-bs-interval="20000"
-          >
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-              <img src="img/Mobile Marketing-amico.svg" alt="" />
-            </div>
-            <div class="col-md-6 col-sm-12 homeInfo">
-              <h1 class="fs-4 fw-bold">
-                Easy <span class="Makasb fs-2">FREE</span> registration and more
-                than 400 daily bonus points for active users.
-              </h1>
-              <p class="fs-6 mt-lg-3 lh-base">
-                We allow you to look and choose who you want to
-                <span class="social fs-5">like</span> -
-                <span class="social fs-5">subscribe</span> -
-                <span class="social fs-5">follow</span> -
-                <span class="social fs-5">view</span> and skip those who you are
-                not interested in.
-              </p>
-              <button class="mainButton mb-5 mt-lg-3">
-                <a href="">Registration</a>
-              </button>
-            </div>
-          </div>
-          <!--  -->
-          <div
-            class="row carousel-item align-items-center justify-content-center"
-            data-bs-interval="10000"
-          >
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
-              <img src="img/Social load-pana.svg" alt="" />
-            </div>
-            <div class="col-md-6 col-sm-12 homeInfo">
-              <h1 class="fs-4 fw-bold">
-                <span class="Makasb fs-2">Makasb</span> doesn't sell
-                <span class="social">like</span> -
-                <span class="social">subscribe</span> -
-                <span class="social">follow</span> -
-                <span class="social">view</span> -
-                <span class="social">hits</span>
-              </h1>
-              <p class="fs-6 mt-lg-3 lh-base">
-                We will never request for usernames and passwords of your social
-                network accounts and will never post, tweet or update status
-                from your accounts
-              </p>
-              <button class="mainButton mb-5 mt-lg-3">
-                <a href="">Registration</a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        ></button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        ></button>
-      </div>
-    </section>
-    <section class="section" id="Services">
-      <div class="container">
-        <div class="mainHeading text-center">
-          <h1>
-            <span>S</span>
-            <span>E</span>
-            <span>R</span>
-            <span>V</span>
-            <span>I</span>
-            <span>C</span>
-            <span>E</span>
-            <span>S</span>
-          </h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-            <div class="servicesBox">
-              <div class="circle">
-                <i class="fa-solid fa-circle right"></i>
-                <i class="fa-solid fa-circle left"></i>
-              </div>
-              <div>
-                <div>
-                  <i class="fa-solid fa-credit-card"></i>
-                  <h3>Payment methods</h3>
-                </div>
-                <p>
-                  We have several secure payment methods
-                  <span>
-                    (Credit Cards, Crypto Payments, Mobile, E-Wallets and more)
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-            <div class="servicesBox">
-              <div class="circle">
-                <i class="fa-solid fa-circle right"></i>
-                <i class="fa-solid fa-circle left"></i>
-              </div>
-              <div>
-                <div>
-                  <i class="fa-solid fa-house-laptop"></i>
-                  <h3>User friendly interface</h3>
-                </div>
-                <p>We have user friendly interface</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-            <div class="servicesBox">
-              <div class="circle">
-                <i class="fa-solid fa-circle right"></i>
-                <i class="fa-solid fa-circle left"></i>
-              </div>
-              <div>
-                <div>
-                  <i class="fa-solid fa-crown"></i>
-                  <h3>We are the leaders</h3>
-                </div>
-                <p>
-                  We are the leaders in the field of social media
-                  marketing/promotion
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-            <div class="servicesBox">
-              <div class="circle">
-                <i class="fa-solid fa-circle right"></i>
-                <i class="fa-solid fa-circle left"></i>
-              </div>
-              <div>
-                <div>
-                  <i class="fa-solid fa-users-gear"></i>
-                  <h3>Support</h3>
-                </div>
-                <p>We have fast Support</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-            <div class="servicesBox">
-              <div class="circle">
-                <i class="fa-solid fa-circle right"></i>
-                <i class="fa-solid fa-circle left"></i>
-              </div>
-              <div>
-                <div>
-                  <i class="fa-solid fa-users-line"></i>
-                  <h3>6.700.000 active users</h3>
-                </div>
-                <p>
-                  We have more than 6.700.000 active users from more than 211
-                  countries
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-            <div class="servicesBox">
-              <div class="circle">
-                <i class="fa-solid fa-circle right"></i>
-                <i class="fa-solid fa-circle left"></i>
-              </div>
-              <div>
-                <div>
-                  <i class="fa-solid fa-credit-card"></i>
-                  <h3>Payment methods</h3>
-                </div>
-                <p>
-                  We have several secure payment methods
-                  <span>
-                    (Credit Cards, Crypto Payments, Mobile, E-Wallets and more)
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
+
+        <div>
+          <button class="mainButton"><a href="" class="showLoginRight">Login </a></button>
+          <span class="or fs-4 ms-2">or</span>
+          <button class="mainButton  ms-2"><a href="">Registration </a></button>
         </div>
       </div>
-    </section>
-    <section class="section" id="About">
-      <div class="container">
-        <div class="mainHeading text-center">
-          <h1>
-            <span>A</span>
-            <span>B</span>
-            <span>O</span>
-            <span>U</span>
-            <span>T</span>
-            <span class="space"></span>
-            <span>U</span>
-            <span>S</span>
-          </h1>
-        </div>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-12">
-            <img src="img/Mobile Marketing-rafiki.svg" alt="" />
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="aboutBox">
-              <h4 class="fs-1">
-                <span class="Makasb">Makasb</span> helps you to
-              </h4>
-              <p class="fs-6 lh-base text-black-50">
-                increase Facebook Likes, Facebook Share, Facebook Followers,
-                Facebook Post Likes, Facebook Post Share, CoinMarketCap
-                Watchlists, Reddit Community Members, Reddit Post/Comments
-                Upvotes, YouTube Subscribe, YouTube Video Likes, YouTube Views,
-                Twitter Followers, Twitter Tweets, Twitter Likes, VK Page
-                Followers, VK Group Join, Instagram Followers, Instagram Photo
-                Likes, Pinterest Followers, Pinterest Post Save, Reverbnation
-                Fans, SoundCloud Followers, SoundCloud Music Listening, Twitch
-                Followers, TikTok Followers, TikTok Video Likes, Likee
-                Followers/Fan, Telegram Channel Subscribers, Subscribers and
-                Website Hits (autosurf).
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="Features">
-      <div class="container">
-        <div class="mainHeading text-center">
-          <h1>
-            <span>F</span>
-            <span>E</span>
-            <span>A</span>
-            <span>T</span>
-            <span>U</span>
-            <span>R</span>
-            <span>E</span>
-            <span>S</span>
-          </h1>
-        </div>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="img/Social networking-cuate.svg" alt="" />
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="FeaturesBox">
-              <div class="linkSocial">
-                <ul class="d-flex justify-content-around">
-                  <li class="fs-3" data-show="Facebook">Facebook</li>
-                  <li class="fs-3" data-show="Instagram">Instagram</li>
-                  <li class="fs-3" data-show="Twitter">Twitter</li>
-                  <li class="fs-3" data-show="YouTube">YouTube</li>
-                </ul>
-              </div>
-              <div class="pt-3">
-                <div class="facebook active" id="Facebook">
-                  <h2 class="fs-4">
-                    Get <span class="social">FREE</span> Facebook Likes,
-                    Followers, Share
-                  </h2>
-                  <p class="lh-base">
-                    Facebook is the fastest growing and most renowned social
-                    network of the world, With the help of Makasb, you can gain
-                    thousands of likes, followers and shares ABSOLUTELY FOR
-                    FREE.
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-square-check"></i> Facebook Likes
-                      Page <span class="text-black-50">or</span> Post
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Facebook Share
-                      Page <span class="text-black-50">or</span> Post
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Facebook
-                      Followers
-                    </li>
-                  </ul>
-                </div>
-                <div class="Instagram" id="Instagram">
-                  <h2 class="fs-4">
-                    Get <span class="social">FREE</span> FInstagram Followers
-                    and Instagram Photo Likes
-                  </h2>
-                  <p class="lh-base">
-                    Instagram is one of the shortest and funniest ways to share
-                    your life events with friends through various pictures.
-                    Makasb will help you to get more Instagram followers and
-                    also likes for your Instagram photos
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-square-check"></i> Instagram
-                      Followers
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Instagram Photo
-                      Likes
-                    </li>
-                  </ul>
-                </div>
-                <div class="Twitter" id="Twitter">
-                  <h2 class="fs-4">
-                    Get <span class="social">FREE</span> Twitter Followers,
-                    Tweets, reTweets and Likes
-                  </h2>
-                  <p class="lh-base">
-                    Twitter is one of the greatest ways to keep in touch with
-                    people, to express your feelings, and to be informed of
-                    everything. Consequently, it's crucial for You to be active
-                    on Twitter as much as possible and to have many followers.
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-square-check"></i> Twitter Followers
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Twitter Tweets
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Twitter Likes
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Twitter reTweets
-                    </li>
-                  </ul>
-                </div>
-                <div class="YouTube" id="YouTube">
-                  <h2 class="fs-4">
-                    Get <span class="social">FREE</span> YouTube Views,
-                    Subscribers, Likes
-                  </h2>
-                  <p class="lh-base">
-                    If you have a video on the world's biggest video platform:
-                    YouTube, you have also a great chance to promote your video
-                    receiving views, likes and favorites. Makasb gives you also
-                    the opportunity to increase the amount of your YouTube
-                    channel subscribers. And what's the important thing is that
-                    You can get all this for free , with quality and in the
-                    fastest way
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-square-check"></i> YouTube Views
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> YouTube Subscribe
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> YouTube Video
-                      Likes
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </nav>
     <!--  -->
-    <section class="section">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-6 col-sm-12">
-            <div class="FeaturesBox">
-              <div class="linkSocial">
-                <ul class="d-flex">
-                  <li class="fs-3 me-5" data-show="Pinterest ">Pinterest</li>
-                  <li class="fs-3 me-5" data-show="VK">VK</li>
-                  <li class="fs-3 me-5" data-show="SoundCloud">SoundCloud</li>
-                </ul>
-              </div>
-              <div class="pt-3">
-                <div class="facebook active" id="Pinterest">
-                  <h2 class="fs-4">
-                    Get <span class="social">FREE</span> Facebook Likes,
-                    Followers, Share
-                  </h2>
-                  <p class="lh-base">
-                    Facebook is the fastest growing and most renowned social
-                    network of the world, With the help of Makasb, you can gain
-                    thousands of likes, followers and shares ABSOLUTELY FOR
-                    FREE.
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-square-check"></i> Facebook Likes
-                      Page <span class="text-black-50">or</span> Post
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Facebook Share
-                      Page <span class="text-black-50">or</span> Post
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Facebook
-                      Followers
-                    </li>
-                  </ul>
-                </div>
-                <div class="Instagram" id="VK">
-                  <h2 class="fs-4">
-                    Get <span class="social">FREE</span> FInstagram Followers
-                    and Instagram Photo Likes
-                  </h2>
-                  <p class="lh-base">
-                    Instagram is one of the shortest and funniest ways to share
-                    your life events with friends through various pictures.
-                    Makasb will help you to get more Instagram followers and
-                    also likes for your Instagram photos
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-square-check"></i> Instagram
-                      Followers
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Instagram Photo
-                      Likes
-                    </li>
-                  </ul>
-                </div>
-                <div class="Twitter" id="SoundCloud">
-                  <h2 class="fs-4">
-                    Get <span class="social">FREE</span> Twitter Followers,
-                    Tweets, reTweets and Likes
-                  </h2>
-                  <p class="lh-base">
-                    Twitter is one of the greatest ways to keep in touch with
-                    people, to express your feelings, and to be informed of
-                    everything. Consequently, it's crucial for You to be active
-                    on Twitter as much as possible and to have many followers.
-                  </p>
-                  <ul>
-                    <li>
-                      <i class="fa-solid fa-square-check"></i> Twitter Followers
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Twitter Tweets
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Twitter Likes
-                    </li>
-                    <li class="mt-2">
-                      <i class="fa-solid fa-square-check"></i> Twitter reTweets
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+  </header>
+  <section class="section" id="Home">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide container" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" class="active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="row carousel-item active align-items-center justify-content-center" data-bs-interval="30000">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+            <img src="img/FOMO-cuate.svg" alt="" />
           </div>
-          <div class="col-lg-6 col-sm-12">
-            <img src="img/FOMO-amico.svg" alt="" />
+          <div class="col-md-6 col-sm-12 homeInfo">
+            <h1 class="fs-4 fw-bold">
+              <span class="Makasb fs-2">Makasb</span> is a network that will
+              help you grow your social presence.
+            </h1>
+            <p class="fs-6 mt-lg-3 lh-base">
+              We allow you to look and choose who you want to
+              <span class="social fs-5">like</span> -
+              <span class="social fs-5">subscribe</span> -
+              <span class="social fs-5">follow</span> -
+              <span class="social fs-5">view</span> and skip those who you are
+              not interested in.
+            </p>
+            <button class="mainButton mb-5 mt-lg-3">
+              <a href="">Registration</a>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <!--  -->
-    <section id="coins" class="section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-sm-12">
-            <img src="img/Rocket-amico.svg" alt="" />
+        <!--  -->
+        <div class="row carousel-item align-items-center justify-content-center" data-bs-interval="20000">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+            <img src="img/Mobile Marketing-amico.svg" alt="" />
           </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="coinsBox">
-              <h3 class="fs-4 lh-base">
-                Easily Exchange Your Makasb Points for Valuable AMF Tokens - Do
-                This TODAY Before Value Skyrockets
-              </h3>
-              <p class="lh-base text-black-50">
-                The world is rapidly transitioning to borderless cryptocurrency.
-                Millions of people in countless countries now prefer to buy,
-                pay, and invest in smart crypto that keeps their identity
-                private and secure.
-              </p>
-            </div>
-            <div class="coinsBox pt-3">
-              <h3 class="fs-4 lh-base">
-                Makasb has made our new AMF Tokens extremely EASY to buy and
-                use.
-              </h3>
-              <p class="lh-base text-black-50">
-                Tokens will rapidly increase in value as they are hotly promoted
-                on social media, via email, and many other channels. This is
-                your chance to get in on the ground floor of what may become a
-                historic investment opportunity.
-              </p>
-            </div>
+          <div class="col-md-6 col-sm-12 homeInfo">
+            <h1 class="fs-4 fw-bold">
+              Easy <span class="Makasb fs-2">FREE</span> registration and more
+              than 400 daily bonus points for active users.
+            </h1>
+            <p class="fs-6 mt-lg-3 lh-base">
+              We allow you to look and choose who you want to
+              <span class="social fs-5">like</span> -
+              <span class="social fs-5">subscribe</span> -
+              <span class="social fs-5">follow</span> -
+              <span class="social fs-5">view</span> and skip those who you are
+              not interested in.
+            </p>
+            <button class="mainButton mb-5 mt-lg-3">
+              <a href="">Registration</a>
+            </button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row carousel-item align-items-center justify-content-center" data-bs-interval="10000">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+            <img src="img/Social load-pana.svg" alt="" />
+          </div>
+          <div class="col-md-6 col-sm-12 homeInfo">
+            <h1 class="fs-4 fw-bold">
+              <span class="Makasb fs-2">Makasb</span> doesn't sell
+              <span class="social">like</span> -
+              <span class="social">subscribe</span> -
+              <span class="social">follow</span> -
+              <span class="social">view</span> -
+              <span class="social">hits</span>
+            </h1>
+            <p class="fs-6 mt-lg-3 lh-base">
+              We will never request for usernames and passwords of your social
+              network accounts and will never post, tweet or update status
+              from your accounts
+            </p>
             <button class="mainButton mb-5 mt-lg-3">
               <a href="">Registration</a>
             </button>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"></button>
+    </div>
+  </section>
+  <section class="section" id="Services">
+    <div class="container">
+      <div class="mainHeading text-center">
+        <h1>
+          <span>S</span>
+          <span>E</span>
+          <span>R</span>
+          <span>V</span>
+          <span>I</span>
+          <span>C</span>
+          <span>E</span>
+          <span>S</span>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+          <div class="servicesBox">
+            <div class="circle">
+              <i class="fa-solid fa-circle right"></i>
+              <i class="fa-solid fa-circle left"></i>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Payment methods</h3>
+              </div>
+              <p>
+                We have several secure payment methods
+                <span>
+                  (Credit Cards, Crypto Payments, Mobile, E-Wallets and more)
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+          <div class="servicesBox">
+            <div class="circle">
+              <i class="fa-solid fa-circle right"></i>
+              <i class="fa-solid fa-circle left"></i>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-house-laptop"></i>
+                <h3>User friendly interface</h3>
+              </div>
+              <p>We have user friendly interface</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+          <div class="servicesBox">
+            <div class="circle">
+              <i class="fa-solid fa-circle right"></i>
+              <i class="fa-solid fa-circle left"></i>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-crown"></i>
+                <h3>We are the leaders</h3>
+              </div>
+              <p>
+                We are the leaders in the field of social media
+                marketing/promotion
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+          <div class="servicesBox">
+            <div class="circle">
+              <i class="fa-solid fa-circle right"></i>
+              <i class="fa-solid fa-circle left"></i>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-users-gear"></i>
+                <h3>Support</h3>
+              </div>
+              <p>We have fast Support</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+          <div class="servicesBox">
+            <div class="circle">
+              <i class="fa-solid fa-circle right"></i>
+              <i class="fa-solid fa-circle left"></i>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-users-line"></i>
+                <h3>6.700.000 active users</h3>
+              </div>
+              <p>
+                We have more than 6.700.000 active users from more than 211
+                countries
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+          <div class="servicesBox">
+            <div class="circle">
+              <i class="fa-solid fa-circle right"></i>
+              <i class="fa-solid fa-circle left"></i>
+            </div>
+            <div>
+              <div>
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Payment methods</h3>
+              </div>
+              <p>
+                We have several secure payment methods
+                <span>
+                  (Credit Cards, Crypto Payments, Mobile, E-Wallets and more)
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="About">
+    <div class="container">
+      <div class="mainHeading text-center">
+        <h1>
+          <span>A</span>
+          <span>B</span>
+          <span>O</span>
+          <span>U</span>
+          <span>T</span>
+          <span class="space"></span>
+          <span>U</span>
+          <span>S</span>
+        </h1>
+      </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <img src="img/Mobile Marketing-rafiki.svg" alt="" />
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="aboutBox">
+            <h4 class="fs-1">
+              <span class="Makasb">Makasb</span> helps you to
+            </h4>
+            <p class="fs-6 lh-base text-black-50">
+              increase Facebook Likes, Facebook Share, Facebook Followers,
+              Facebook Post Likes, Facebook Post Share, CoinMarketCap
+              Watchlists, Reddit Community Members, Reddit Post/Comments
+              Upvotes, YouTube Subscribe, YouTube Video Likes, YouTube Views,
+              Twitter Followers, Twitter Tweets, Twitter Likes, VK Page
+              Followers, VK Group Join, Instagram Followers, Instagram Photo
+              Likes, Pinterest Followers, Pinterest Post Save, Reverbnation
+              Fans, SoundCloud Followers, SoundCloud Music Listening, Twitch
+              Followers, TikTok Followers, TikTok Video Likes, Likee
+              Followers/Fan, Telegram Channel Subscribers, Subscribers and
+              Website Hits (autosurf).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="Features">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-sm-12">
+          <img src="img/Social networking-cuate.svg" alt="" />
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="FeaturesBox">
+            <div class="linkSocial">
+              <button class="mainButton2 active me-5 mb-3 " data-show="Facebook">Facebook</button>
+              <button class="mainButton2  me-5 mb-3 " data-show="Twitter">Twitter</button>
+              <button class="mainButton2  me-5 mb-3 " data-show="Instagram">Instagram</button>
+              <button class="mainButton2  me-5 mb-3 " data-show="YouTube">YouTube</button>
+            </div>
+            <div class="pt-3">
+              <div class="facebook active" id="Facebook">
+                <h2 class="fs-4">
+                  Get <span class="social">FREE</span> Facebook Likes,
+                  Followers, Share
+                </h2>
+                <p class="lh-base">
+                  Facebook is the fastest growing and most renowned social
+                  network of the world, With the help of Makasb, you can gain
+                  thousands of likes, followers and shares ABSOLUTELY FOR
+                  FREE.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i> Facebook Likes
+                    Page <span class="text-black-50">or</span> Post
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> Facebook Share
+                    Page <span class="text-black-50">or</span> Post
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> Facebook
+                    Followers
+                  </li>
+                </ul>
+              </div>
+              <div class="Instagram" id="Instagram">
+                <h2 class="fs-4">
+                  Get <span class="social">FREE</span> FInstagram Followers
+                  and Instagram Photo Likes
+                </h2>
+                <p class="lh-base">
+                  Instagram is one of the shortest and funniest ways to share
+                  your life events with friends through various pictures.
+                  Makasb will help you to get more Instagram followers and
+                  also likes for your Instagram photos
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i> Instagram
+                    Followers
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> Instagram Photo
+                    Likes
+                  </li>
+                </ul>
+              </div>
+              <div class="Twitter" id="Twitter">
+                <h2 class="fs-4">
+                  Get <span class="social">FREE</span> Twitter Followers,
+                  Tweets, reTweets and Likes
+                </h2>
+                <p class="lh-base">
+                  Twitter is one of the greatest ways to keep in touch with
+                  people, to express your feelings, and to be informed of
+                  everything. Consequently, it's crucial for You to be active
+                  on Twitter as much as possible and to have many followers.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i> Twitter Followers
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> Twitter Tweets
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> Twitter Likes
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> Twitter reTweets
+                  </li>
+                </ul>
+              </div>
+              <div class="YouTube" id="YouTube">
+                <h2 class="fs-4">
+                  Get <span class="social">FREE</span> YouTube Views,
+                  Subscribers, Likes
+                </h2>
+                <p class="lh-base">
+                  If you have a video on the world's biggest video platform:
+                  YouTube, you have also a great chance to promote your video
+                  receiving views, likes and favorites. Makasb gives you also
+                  the opportunity to increase the amount of your YouTube
+                  channel subscribers. And what's the important thing is that
+                  You can get all this for free , with quality and in the
+                  fastest way
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i> YouTube Views
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> YouTube Subscribe
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> YouTube Video
+                    Likes
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="section FeaturesTwo">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 col-sm-12">
+          <img src="img/fomo-not-css.svg" alt="" />
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="FeaturesBox">
+            <div class="linkSocial">
+              <button class="mainButton2 active me-5 mb-3 " data-show="Pinterest">Pinterest</button>
+              <button class="mainButton2  me-5 mb-3 " data-show="SoundCloud">SoundCloud</button>
+              <button class="mainButton2  me-5 mb-3 " data-show="VK">VK</button>
+            </div>
+            <div class="pt-3">
+              <div class="facebook" id="Pinterest">
+                <h2 class="fs-4">
+                  Get <span class="social">FREE</span> Pinterest Followers and Saves
+                </h2>
+                <p class="lh-base">
+                  Pinterest is a tool for gathering and arranging things you are fond of. Thousands of people use
+                  Pinterest in their daily life and work. Tastes differ, but no matter, you will find everything you are
+                  interested in there. So hurry up to have lots of Followers and Saves via Makasb.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>Pinterest Followers
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i>Pinterest Save
+                  </li>
+                </ul>
+              </div>
+              <div class="Instagram" id="VK">
+                <h2 class="fs-4">
+                  Get <span class="social">FREE</span> FInstagram Followers
+                  and Instagram Photo Likes
+                </h2>
+                <p class="lh-base">
+                  As we know, VK (Originally VKontakte, Russian: ВКонтакте) is the second biggest social network in
+                  Europe after Facebook. As one of the famous social networks, it allows users to send public and
+                  private messages to their contacts. Using VK you can create groups, events, and public pages, share
+                  and tag images, audio, and video, and play browser-based games. On Makasb you can get free VK Page
+                  Followers and VK Group Members
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i>VK Page Followers
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> VK Group Members
+                    Likes
+                  </li>
+                </ul>
+              </div>
+              <div class="Twitter" id="SoundCloud">
+                <h2 class="fs-4">
+                  Get <span class="social">FREE</span>SoundCloud Followers, Likes and Music Plays
+                </h2>
+                <p class="lh-base">
+                  SoundCloud is the number one social sound platform where you have an opportunity to create your own
+                  sounds and share them with everybody. By recording and uploading sounds to SoundCloud people can
+                  easily share them with their friends and also share with the public: on different blogs, sites, and
+                  social networks. Using Makasb, Here are some features that suggest Makasb for SoundCloud:
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-square-check"></i> SoundCloud Followers
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> SoundCloud Likes
+                  </li>
+                  <li class="mt-2">
+                    <i class="fa-solid fa-square-check"></i> SoundCloud Music Plays
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="coins" class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-sm-12">
+          <img src="img/Rocket-amico.svg" alt="" />
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="coinsBox">
+            <h3 class="fs-4 lh-base">
+              Easily Exchange Your Makasb Points for Valuable AMF Tokens - Do
+              This TODAY Before Value Skyrockets
+            </h3>
+            <p class="lh-base text-black-50">
+              The world is rapidly transitioning to borderless cryptocurrency.
+              Millions of people in countless countries now prefer to buy,
+              pay, and invest in smart crypto that keeps their identity
+              private and secure.
+            </p>
+          </div>
+          <div class="coinsBox pt-3">
+            <h3 class="fs-4 lh-base">
+              Makasb has made our new AMF Tokens extremely EASY to buy and
+              use.
+            </h3>
+            <p class="lh-base text-black-50">
+              Tokens will rapidly increase in value as they are hotly promoted
+              on social media, via email, and many other channels. This is
+              your chance to get in on the ground floor of what may become a
+              historic investment opportunity.
+            </p>
+          </div>
+          <button class="mainButton mb-5 mt-lg-3">
+            <a href="">Registration</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <footer>
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-6 col-sm-12 d-flex">
@@ -676,7 +625,7 @@
                 </p>
               </div>
             </div>
-            <!--  -->
+
             <div class="footerBox pt-3">
               <div class="mt-4 linkFooter position-relative z">
                 <p class="mb-3">
@@ -704,12 +653,24 @@
           </div>
         </div>
       </div>
-    </footer>
-    <!--  -->
-    <script src="JS/popper.min.js"></script>
-    <script src="JS/jquery-3.6.0.min.js"></script>
-    <script src="JS/bootstrap.bundle.min.js"></script>
-    <script src="JS/all.min.js"></script>
-    <script src="JS/main.js"></script>
-  </body>
+    </footer> -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center ">
+        <div class="col-md-12 text-center text-black-50">
+          Copyright © 2022 . all rights are save
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </footer>
+  <!--  -->
+  <script src="JS/popper.min.js"></script>
+  <script src="JS/jquery-3.6.0.min.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/all.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+
 </html>
