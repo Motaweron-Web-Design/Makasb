@@ -70,4 +70,35 @@ $(document).ready(function () {
       500
     );
   });
+  console.log($("#password").val())
+  function changePassword() {
+    
+    $(".eye").on("click" , function () {
+      if ($(".toggleSvg").attr("data-text") == "show") {
+        $("#password").attr("type" , "text")
+        $(".toggleSvg").attr("data-text" , "hide")
+        $(".toggleSvg").addClass("fa-eye")
+        $(".eye").addClass("active")
+      }else{
+        $("#password").attr("type" , "password")
+        $(".toggleSvg").attr("data-text" , "show")
+        $(".toggleSvg").addClass("fa-eye-slash")
+        $(".eye").removeClass("active")
+      }
+    })
+    $(".eye2").on("click" , function () {
+      if ($(".toggleSvg2").attr("data-text") == "show") {
+        $("#password2").attr("type" , "text")
+        $(".toggleSvg2").attr("data-text" , "hide")
+        $(".toggleSvg2").addClass("fa-eye")
+        $(".eye2").addClass("active")
+      }else{
+        $("#password2").attr("type" , "password")
+        $(".toggleSvg2").attr("data-text" , "show")
+        $(".toggleSvg2").addClass("fa-eye-slash")
+        $(".eye2").removeClass("active")
+      }
+    })
+  }
+  changePassword();
 });

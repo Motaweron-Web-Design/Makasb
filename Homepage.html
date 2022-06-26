@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makasb</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/homePage.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <div class="scrollTop">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navTop homenav">
+        <div class="container">
+          <a class="navbar-brand logo" href="#"
+            ><img class="LogoBrand" src="img/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler togglers"
+            id="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-3 mb-lg-0 navTopLink">
+              <li class="nav-item">
+                <a
+                  class="nav-link me-3"
+                  data-scroll="Home"
+                  aria-current="page"
+                  href="MySites.html"
+                  >My Sites</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link " data-scroll="Features" href="#"
+                  >Subscription</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" data-scroll="coins" href="#">Buy Points</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fa-brands fa-facebook-square me-1"></i>Facebook
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Facebook Share</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Facebook Followers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Facebook Post Like</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Facebook Post Share</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fa-brands fa-instagram me-1"></i>Instagram
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Instagram Followers</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Instagram Like</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fa-brands fa-twitter me-1"></i>Twitter
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Twitter Tweets</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Twitter Followers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Twitter Retweets</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Twitter Likes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fa-brands fa-youtube me-1"></i>YouTube
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">YouTube Subscribe</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">YouTube Likes</a></li>
+                  <li><a class="dropdown-item" href="#">YouTube Views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fa-brands fa-tiktok me-1"></i>TikTok
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">TikTok Followers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">TikTok Video Likes</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fa-brands fa-soundcloud me-1"></i>SoundCloud
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">SoundCloud Likes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">SoundCloud Follow</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">SoundCloud Plays</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Other
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Reddit Upvotes</a></li>
+                  <li><a class="dropdown-item" href="#">Reddit Members</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Telegram Channels</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Twitch Followers</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Website Hits</a></li>
+                  <li><a class="dropdown-item" href="#">Pinterest Save</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Pinterest Followers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Vkontakte Groups</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Vkontakte Pages</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">OK.ru Group Join</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reverbnation Fans</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--  -->
+    </header>
+    <div class="MainPage d-flex">
+      <div class="slideBar">
+        <div class="iconHomeNav">
+          <div class="iconHome">
+            <a href="Homepage.html" class="active"><i class="fa-solid fa-house"></i></a>
+          </div>
+          <div class="iconHome">
+            <a href="Conis.html"><i class="fa-solid fa-coins"></i></a>
+          </div>
+          <div class="iconHome">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+          <div class="iconHome">
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="Home">
+        <div class="container">
+          <div class="HomePageDetails">
+            <div class="welcomeMassage">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="typier">
+                    <h2>Welcome</h2>
+                    <span class="fs-5">To</span>
+                    <h3 class="typierEffect active" data-typier="Makasb"></h3>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div>
+                    <img src="img/Enthusiastic-amico.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pointsFree section">
+            <div class="mainHeading text-center">
+              <h1>
+                <span class="red">F</span>
+                <span class="red">R</span>
+                <span class="red">E</span>
+                <span class="red">E</span>
+                <span class="space"></span>
+                <span>P</span>
+                <span>O</span>
+                <span>I</span>
+                <span>N</span>
+                <span>T</span>
+                <span>S</span>
+              </h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="servicesBox">
+                  <div class="circle">
+                    <i class="fa-solid fa-circle right"></i>
+                    <i class="fa-solid fa-circle left"></i>
+                  </div>
+                  <div>
+                    <div>
+                      <i class="fa-solid fa-right-left"></i>
+                      <h3>FREE Exchange</h3>
+                    </div>
+                    <p>
+                      Get
+                      <span> Free </span>
+                      Points by liking - following others' pages - profiles and
+                      etc. You can get unlimited points and promote unlimited
+                      accounts and not spending even a single cent.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="servicesBox">
+                  <div class="circle">
+                    <i class="fa-solid fa-circle right"></i>
+                    <i class="fa-solid fa-circle left"></i>
+                  </div>
+                  <div>
+                    <div>
+                      <i class="fa-solid fa-hand-point-down"></i>
+                      <h3>Daily Bonus Points</h3>
+                    </div>
+                    <p>
+                      We give Daily Active users Daily Bonus Points (400 and
+                      more daily bonus points for at least daily 100 clicks). So
+                      you can get Free Points and also Daily Bonus points.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="servicesBox">
+                  <div class="circle">
+                    <i class="fa-solid fa-circle right"></i>
+                    <i class="fa-solid fa-circle left"></i>
+                  </div>
+                  <div>
+                    <div>
+                      <i class="fa-solid fa-user-plus"></i>
+                      <h3>Invite Your Friends</h3>
+                    </div>
+                    <p>
+                      Get
+                      <span> 300 </span>
+                      points by participating in our Affiliate Program. Share
+                      your short referral link anywhere (on your website, blog
+                      or on any social media platform) in order to be able to
+                      register new users on Makasb.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pointsBuy section">
+            <div class="mainHeading text-center">
+              <h1>
+                <span class="red">B</span>
+                <span class="red">U</span>
+                <span class="red">Y</span>
+                <span class="space"></span>
+                <span>P</span>
+                <span>O</span>
+                <span>I</span>
+                <span>N</span>
+                <span>T</span>
+                <span>S</span>
+              </h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <div class="servicesBox">
+                  <div class="circle">
+                    <i class="fa-solid fa-circle right"></i>
+                    <i class="fa-solid fa-circle left"></i>
+                  </div>
+                  <div>
+                    <div>
+                      <i class="fa-solid fa-money-bill-trend-up"></i>
+                      <h3 class="fs-">Special Offer</h3>
+                    </div>
+                    <p>
+                      You can spend less time on Makasb and can get a lot of
+                      likes - followers, if you buy points on Makasb. Currently
+                      we have Special Offer, so you can get 30% More Points .
+                      IMPORTANT: Do not buy accounts, or spend money for filling
+                      your account by others, because your account will be
+                      banned permanently and your links will not be transferred
+                      to any other account.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+                <div class="servicesBox">
+                  <div class="circle">
+                    <i class="fa-solid fa-circle right"></i>
+                    <i class="fa-solid fa-circle left"></i>
+                  </div>
+                  <div>
+                    <div>
+                      <i class="fa-solid fa-money-check-dollar"></i>
+                      <h3>Weekly Unlimited Points</h3>
+                    </div>
+                    <p>
+                      Weekly Unlimited Points - it's real! Buy weekly
+                      subscription to get unlimited points and promote your
+                      accounts for 50 CPC, that's the fastest way to get a lot
+                      of likes - followers at Makasb. Note: in subscription
+                      period, you can continue to get free points and
+                      participate in affiliate program without any problem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <footer>
+      <div class="container">
+        <div class="row align-items-center ">
+          <div class="col-md-12 text-center text-black-50">
+            Copyright © 2022 . all rights are save
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <!--  -->
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/homePage.js"></script>
+  </body>
+</html>
