@@ -13,7 +13,7 @@ $(document).ready(function () {
       100
     );
   });
-  $(".linkSocial .mainButton2").on("click", function (e) {
+  $(".linkSocial .mainButton3").on("click", function (e) {
     e.preventDefault();
     $(this).addClass("active").siblings().removeClass("active");
     $("#" + $(this).data("show"))

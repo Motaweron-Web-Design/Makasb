@@ -27,11 +27,14 @@ a {
   text-decoration: none;
 }
 .mainButton,
-.mainButton2 {
+.mainButton2
+,
+.mainButton3 {
   background-color: transparent;
   border: 2px solid var(--blue-main);
   border-radius: 10px;
   transition: 0.3s;
+  color: #fff;
 }
 .mainButton a , .mainButton2 a {
   font-size: 18px;
@@ -39,15 +42,21 @@ a {
   padding: 10px 15px;
   color: var(--blue-main);
 }
-
+.mainButton3{
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px 15px;
+  color: var(--blue-main);
+}
 .mainButton a:hover , .mainButton2 a:hover {
   color: #fff;
 }
-.mainButton:hover , .mainButton2:hover {
+.mainButton:hover , .mainButton2:hover , .mainButton3:hover {
   background-color: var(--blue-main);
+  color: #fff;
 }
-.mainButton2:hover,
-.mainButton2.active {
+.mainButton3:hover,
+.mainButton3.active {
   background-color: var(--blue-main);
   color: #fff;
 }
