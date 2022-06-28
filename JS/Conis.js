@@ -32,4 +32,43 @@ $(document).ready(function () {
           behavior: "smooth",
         });
       });
+      $("#on").on("click" , function () {
+        $("#on").hide()
+        $("#frist").attr("value" , "1000")
+        $("#frist").attr("disabled" , false)
+        $("#off").show()
+      })
+
+      $("#off").on("click" , function () {
+        $("#off").hide()
+        $("#frist").attr("disabled" , true)
+        $("#frist").attr("value" , "")
+        $("#on").show()
+      })
+
+      $("#on1").on("click" , function () {
+        $("#on1").hide()
+        $("#second").attr("value" , "100")
+        $("#second").attr("disabled" , false)
+        $("#off1").show()
+      })
+
+      $("#off1").on("click" , function () {
+        $("#off1").hide()
+        $("#second").attr("disabled" , true)
+        $("#second").attr("value" , "")
+        $("#on1").show()
+      })
+      $("#cpc").attr("value" , "25")
+      $(".iconProfile a").click(function (e) {
+        (e).preventDefault()
+        $(this).addClass("active").siblings().removeClass("active")
+        $("#" + $(this).data("show")).show().siblings().hide()
+      })
+      $("#Username").attr("value" , "ahmedEltatawy")
+      $("#Email").attr("value" , "ahmedEltatawy@gmail.com")
+      $(".country").select2({
+        placeholder: "Select a country",
+        allowClear: true
+    });
 })

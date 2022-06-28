@@ -161,7 +161,7 @@ a {
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: var(--blue-main);
+    background: linear-gradient(to right,#0a58ca,#2f7cec);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     z-index: -1;
     
@@ -235,6 +235,82 @@ a {
   .pointsBuy{
     margin-bottom: 50px;
   }
+  /*  */
+  .dropdown-menu{
+    border: none !important;
+    border-radius: 0px !important;
+  }
+  .dropdown-menu[data-bs-popper] {
+    top: calc(100% + .70rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff !important;
+    box-shadow: -1 0 5px rgba(66, 66, 66, .1);
+    
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .75rem 1rem !important;
+  clear: both;
+  font-weight: 400;
+  color: #006a9b !important;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0px;
+  transition: .3s all;
+  position: relative;
+}
+.dropdown-item::before{
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: var(--red-main) !important;
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  transition: .3s all;
+  color: #fff !important;
+  z-index: -1;
+}
+.dropdown-item:hover::before , .dropdown-item:focus::before , .dropdown-item.active::before , .dropdown-item:active::before{
+  content: "";
+  width: 100%;
+  height: 90%;
+  background-color: var(--red-main);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--red-main) !important;
+  color: #fff !important;
+}
+.dropdown-item:hover , .dropdown-item:focus , .dropdown-item.active ,.dropdown-item:active{
+  background-color: transparent !important;
+  color: #fff !important;
+}
+/*  */
+.Facebook svg{
+  color: #4267B2;
+}
+.Instagram svg{
+  color: #C13584;
+}
+.Twitter svg{
+  color: #1DA1F2;
+}
+.YouTube svg{
+  color: #FF0000;
+}
+.TikTok svg{
+  color: #000000;
+}
+.SoundCloud svg{
+  color:  #FF5A18;
+}
   /*  */
   footer {
     background-color: #eee;

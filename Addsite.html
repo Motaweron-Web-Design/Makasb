@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makasb</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/Conis.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+</head>
+
+<body>
+    <div class="scrollTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navTop homenav">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"><img class="LogoBrand" src="img/logo.png" alt="" /></a>
+                <button class="navbar-toggler togglers" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0 navTopLink">
+                        <li class="nav-item">
+                            <a class="nav-link me-3 active" data-scroll="Home" aria-current="page"
+                                href="MySites.html">My Sites</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" data-scroll="Features" href="#">Subscription</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" data-scroll="coins" href="#">Buy Points</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle Facebook" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-brands fa-facebook-square me-1"></i>Facebook
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="facbookshare.html">Facebook Share</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="facbookFollower.html">Facebook Followers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="FBpostLike.htm">Facebook Post Like</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="FBpostSahre.html">Facebook Post Share</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle Instagram" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-brands fa-instagram me-1"></i>Instagram
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="instgramFollower.html">Instagram Followers</a>
+                                </li>
+                                <li><a class="dropdown-item" href="instgramLike.html">Instagram Like</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle Twitter" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-brands fa-twitter me-1"></i>Twitter
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="TwitterTweets.html">Twitter Tweets</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="TwitterFollowers.html">Twitter Followers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="TwitterRetweet.html">Twitter Retweets</a>
+                                </li>
+                                <li><a class="dropdown-item" href="TwitterLikes.html">Twitter Likes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle YouTube" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-brands fa-youtube me-1"></i>YouTube
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="YoutubeSubscribe.html">YouTube Subscribe</a>
+                                </li>
+                                <li><a class="dropdown-item" href="YoutubeLikes.html">YouTube Likes</a></li>
+                                <li><a class="dropdown-item" href="YoutubeViews.html">YouTube Views</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle TikTok" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-brands fa-tiktok me-1"></i>TikTok
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="tiktokFollowers.html">TikTok Followers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="tiktokVideoLike.htm">TikTok Video Likes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle SoundCloud" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-brands fa-soundcloud me-1"></i>SoundCloud
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="soundCouldLikes.html">SoundCloud Likes</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item " href="Soundcouldfollow.html">SoundCloud Follow</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="soundcouldplays.html">SoundCloud Plays</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Other
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item " href="RedditUpvotes.html">Reddit Upvotes</a></li>
+                                <li><a class="dropdown-item" href="RedditMembers.html">Reddit Members</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="tlgram.html">Telegram Channels</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Pinterest Save.html">Pinterest Save</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="Pinterest Followers.html">Pinterest Followers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Vkontakte Groups.html">Vkontakte Groups</a>
+                                </li>
+                                <li><a class="dropdown-item" href="Vkontakte Pages.html">Vkontakte Pages</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="OK.ru Group Join.html">OK.ru Group Join</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Reverbnation Fans.html">Reverbnation Fans</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--  -->
+    </header>
+    <div class="MainPage d-flex">
+        <div class="slideBar">
+            <div class="iconHomeNav">
+                <div class="iconHome">
+                    <a href="Homepage.html" class=""><i class="fa-solid fa-house"></i></a>
+                </div>
+                <div class="iconHome">
+                    <a href="Conis.html"><i class="fa-solid fa-coins"></i></a>
+                </div>
+                <div class="iconHome">
+                    <a href="profil.html"><i class="fa-solid fa-user "></i></a>
+                </div>
+                <div class="iconHome">
+                    <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class=" Home AddSite">
+            <div class="AddSiteTop">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div>
+                                <img src="img/Add tasks-rafiki.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="div">
+                                <h3 class="fs-4 fw-bold">Here you can add or edit your content</h3>
+                                <p class="fs-6 mt-lg-3 lh-lg">
+                                    The higher the CPC of your site/page, the more likely you are to get it seen, which
+                                    means that the rate of getting likes/followers will be high. You can add an
+                                    unlimited
+                                    number of sites/pages. Please read our Terms carefully again so you don't post
+                                    content
+                                    that is prohibited here.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addSiteDown">
+                <form action="">
+                    <div>
+                        <select class="form-select social" aria-label="Default select example">
+                            <option value="1">FB Page Likes/Followers</option>
+                            <option value="2">Facebook Share</option>
+                            <option value="3">Facebook Followers</option>
+                            <option value="4">Facebook Post Like</option>
+                            <option value="5">FB Post Share</option>
+                            <option value="6">Reddit Members</option>
+                            <option value="7">Reddit Updates</option>
+                            <option value="8">Telegram Channels</option>
+                            <option value="9">Instagram Followers</option>
+                            <option value="10">Instagram Likes</option>
+                            <option value="11">TikTok Followers</option>
+                            <option value="12">TikTok Video Likes</option>
+                            <option value="13">Twitter Followers</option>
+                            <option value="14">Twitter Tweets</option>
+                            <option value="15">Twitter Retweets</option>
+                            <option value="16">Twitter Likes</option>
+                            <option value="17">YouTube Subscribe</option>
+                            <option value="18">YouTube Likes</option>
+                            <option value="19">YouTube Views</option>
+                            <option value="20">Twitch Followers</option>
+                            <option value="21">Website Hits</option>
+                            <option value="22">Pinterest Save</option>
+                            <option value="23">Pinterest Followers</option>
+                            <option value="24">Likee Followers/Fans</option>
+                            <option value="25">SoundCloud Likes</option>
+                            <option value="26">SoundCloud Follow</option>
+                            <option value="27">SoundCloud Plays</option>
+                            <option value="28">Vkontakte Groups</option>
+                            <option value="29">Vkontakte Pages</option>
+                            <option value="30">OK.ru Group Join</option>
+                            <option value="30">Reverbnation Fans</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-select mt-3 country form-control" id="country"
+                            multiple="multiple"
+                            name="country"
+                            
+                            >
+                            <option value=""></option>
+                            <option value="1" >AFGHANISTAN </option>
+                            <option value="2">ALAND ISLANDS</option>
+                            <option value="3">ALBANIA</option>
+                            <option value="4">ALGERIA</option>
+                            <option value="5">AMERICAN SAMOA</option>
+                            <option value="6">ANDORRA</option>
+                            <option value="7">ANGOLA</option>
+                            <option value="8">ANGUILLA</option>
+                            <option value="9">ANTARCTICA</option>
+                            <option value="10">ANTIGUA AND BARBUDA</option>
+                            <option value="11">ARGENTINA</option>
+                            <option value="12">ARMENIA</option>
+                            <option value="13">ARUBA</option>
+                            <option value="14">AUSTRALIA</option>
+                            <option value="15">AUSTRIA</option>
+                            <option value="16">AZERBAIJAN</option>
+                            <option value="17">BAHAMAS</option>
+                            <option value="18">BAHRAIN</option>
+                            <option value="19">BANGLADESH</option>
+                            <option value="20">BARBADOS</option>
+                            <option value="21">BELARUS</option>
+                            <option value="22">BELGIUM</option>
+                            <option value="23">BELIZE</option>
+                            <option value="24">BENIN</option>
+                            <option value="25">BERMUDA</option>
+                            <option value="26">BHUTAN</option>
+                            <option value="27">BOLIVIA, PLURINATIONAL STATE OF</option>
+                            <option value="28">BONAIRE, SINT EUSTATIUS AND SABA</option>
+                            <option value="29">BOSNIA AND HERZEGOVINA</option>
+                            <option value="30">BOTSWANA</option>
+                            <option value="31">BOUVET ISLAND</option>
+                            <option value="32">BRAZIL</option>
+                            <option value="33">BRITISH INDIAN OCEAN TERRITORY</option>
+                            <option value="34">BRUNEI DARUSSALAM</option>
+                            <option value="35">BULGARIA</option>
+                            <option value="36">BURKINA FASO</option>
+                            <option value="37">BURUNDI</option>
+                            <option value="38">CAMBODIA</option>
+                            <option value="39">CAMEROON</option>
+                            <option value="40">CANADA</option>
+                            <option value="41">CAPE VERDE</option>
+                            <option value="42">CAYMAN ISLANDS</option>
+                            <option value="43">CENTRAL AFRICAN REPUBLIC</option>
+                            <option value="44">CHAD</option>
+                            <option value="45">CHILE</option>
+                            <option value="46">CHINA</option>
+                            <option value="47">CHRISTMAS ISLAND</option>
+                            <option value="48">COCOS (KEELING) ISLANDS</option>
+                            <option value="49">COLOMBIA</option>
+                            <option value="50">COMOROS</option>
+                            <option value="51">CONGO</option>
+                            <option value="52">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+                            <option value="53">COOK ISLANDS</option>
+                            <option value="54">COSTA RICA</option>
+                            <option value="55">COTE D'IVOIRE</option>
+                            <option value="56">CROATIA</option>
+                            <option value="57">CUBA</option>
+                            <option value="58">CURACAO</option>
+                            <option value="59">CYPRUS</option>
+                            <option value="60">CZECH REPUBLIC</option>
+                            <option value="61">DENMARK</option>
+                            <option value="62">DJIBOUTI</option>
+                            <option value="63">DOMINICA</option>
+                            <option value="64">DOMINICAN REPUBLIC</option>
+                            <option value="65">ECUADOR</option>
+                            <option value="66">EGYPT</option>
+                            <option value="67">EL SALVADOR</option>
+                            <option value="68">EQUATORIAL GUINEA</option>
+                            <option value="69">ERITREA</option>
+                            <option value="70">ESTONIA</option>
+                            <option value="71">ETHIOPIA</option>
+                            <option value="72">FALKLAND ISLANDS (MALVINAS)</option>
+                            <option value="73">FAROE ISLANDS</option>
+                            <option value="74">FIJI</option>
+                            <option value="75">FINLAND</option>
+                            <option value="76">FRANCE</option>
+                            <option value="77">FRENCH GUIANA</option>
+                            <option value="78">FRENCH POLYNESIA</option>
+                            <option value="79">FRENCH SOUTHERN TERRITORIES</option>
+                            <option value="80">GABON</option>
+                            <option value="81">GAMBIA</option>
+                            <option value="82">GEORGIA</option>
+                            <option value="83">GERMANY</option>
+                            <option value="84">GHANA</option>
+                            <option value="85">GIBRALTAR</option>
+                            <option value="86">GREECE</option>
+                            <option value="87">GREENLAND</option>
+                            <option value="88">GRENADA</option>
+                            <option value="89">GUADELOUPE</option>
+                            <option value="90">GUAM</option>
+                            <option value="91">GUATEMALA</option>
+                            <option value="92">GUERNSEY</option>
+                            <option value="93">GUINEA</option>
+                            <option value="94">GUINEA-BISSAU</option>
+                            <option value="95">GUYANA</option>
+                            <option value="96">HAITI</option>
+                            <option value="97">HEARD ISLAND AND MCDONALD ISLANDS</option>
+                            <option value="98">HOLY SEE (VATICAN CITY STATE)</option>
+                            <option value="99">HONDURAS</option>
+                            <option value="100">HONG KONG</option>
+                            <option value="101">HUNGARY</option>
+                            <option value="102">ICELAND</option>
+                            <option value="103">INDIA</option>
+                            <option value="104">INDONESIA</option>
+                            <option value="105">IRAN, ISLAMIC REPUBLIC OF</option>
+                            <option value="106">IRAQ</option>
+                            <option value="107">IRELAND</option>
+                            <option value="108">ISLE OF MAN</option>
+                            <option value="109">ISRAEL</option>
+                            <option value="110">ITALY</option>
+                            <option value="111">JAMAICA</option>
+                            <option value="112">JAPAN</option>
+                            <option value="113">JERSEY</option>
+                            <option value="114">JORDAN</option>
+                            <option value="115">KAZAKHSTAN</option>
+                            <option value="116">KENYA</option>
+                            <option value="117">KIRIBATI</option>
+                            <option value="118">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</option>
+                            <option value="119">KOREA, REPUBLIC OF</option>
+                            <option value="251">KOSOVO</option>
+                            <option value="120">KUWAIT</option>
+                            <option value="121">KYRGYZSTAN</option>
+                            <option value="122">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+                            <option value="123">LATVIA</option>
+                            <option value="124">LEBANON</option>
+                            <option value="125">LESOTHO</option>
+                            <option value="126">LIBERIA</option>
+                            <option value="127">LIBYA</option>
+                            <option value="128">LIECHTENSTEIN</option>
+                            <option value="129">LITHUANIA</option>
+                            <option value="130">LUXEMBOURG</option>
+                            <option value="131">MACAO</option>
+                            <option value="132">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+                            <option value="133">MADAGASCAR</option>
+                            <option value="134">MALAWI</option>
+                            <option value="135">MALAYSIA</option>
+                            <option value="136">MALDIVES</option>
+                            <option value="137">MALI</option>
+                            <option value="138">MALTA</option>
+                            <option value="139">MARSHALL ISLANDS</option>
+                            <option value="140">MARTINIQUE</option>
+                            <option value="141">MAURITANIA</option>
+                            <option value="142">MAURITIUS</option>
+                            <option value="143">MAYOTTE</option>
+                            <option value="144">MEXICO</option>
+                            <option value="145">MICRONESIA, FEDERATED STATES OF</option>
+                            <option value="146">MOLDOVA, REPUBLIC OF</option>
+                            <option value="147">MONACO</option>
+                            <option value="148">MONGOLIA</option>
+                            <option value="149">MONTENEGRO</option>
+                            <option value="150">MONTSERRAT</option>
+                            <option value="151">MOROCCO</option>
+                            <option value="152">MOZAMBIQUE</option>
+                            <option value="153">MYANMAR</option>
+                            <option value="154">NAMIBIA</option>
+                            <option value="155">NAURU</option>
+                            <option value="156">NEPAL</option>
+                            <option value="157">NETHERLANDS</option>
+                            <option value="250">NETHERLANDS ANTILLES</option>
+                            <option value="158">NEW CALEDONIA</option>
+                            <option value="159">NEW ZEALAND</option>
+                            <option value="160">NICARAGUA</option>
+                            <option value="161">NIGER</option>
+                            <option value="162">NIGERIA</option>
+                            <option value="163">NIUE</option>
+                            <option value="164">NORFOLK ISLAND</option>
+                            <option value="165">NORTHERN MARIANA ISLANDS</option>
+                            <option value="166">NORWAY</option>
+                            <option value="167">OMAN</option>
+                            <option value="168">PAKISTAN</option>
+                            <option value="169">PALAU</option>
+                            <option value="170">PALESTINIAN TERRITORY, OCCUPIED</option>
+                            <option value="171">PANAMA</option>
+                            <option value="172">PAPUA NEW GUINEA</option>
+                            <option value="173">PARAGUAY</option>
+                            <option value="174">PERU</option>
+                            <option value="175">PHILIPPINES</option>
+                            <option value="176">PITCAIRN</option>
+                            <option value="177">POLAND</option>
+                            <option value="178">PORTUGAL</option>
+                            <option value="179">PUERTO RICO</option>
+                            <option value="180">QATAR</option>
+                            <option value="181">REUNION</option>
+                            <option value="182">ROMANIA</option>
+                            <option value="183">RUSSIAN FEDERATION</option>
+                            <option value="184">RWANDA</option>
+                            <option value="185">SAINT BARTHELEMY</option>
+                            <option value="186">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+                            <option value="187">SAINT KITTS AND NEVIS</option>
+                            <option value="188">SAINT LUCIA</option>
+                            <option value="189">SAINT MARTIN (FRENCH PART)</option>
+                            <option value="190">SAINT PIERRE AND MIQUELON</option>
+                            <option value="191">SAINT VINCENT AND THE GRENADINES</option>
+                            <option value="192">SAMOA</option>
+                            <option value="193">SAN MARINO</option>
+                            <option value="194">SAO TOME AND PRINCIPE</option>
+                            <option value="195">SAUDI ARABIA</option>
+                            <option value="196">SENEGAL</option>
+                            <option value="197">SERBIA</option>
+                            <option value="198">SEYCHELLES</option>
+                            <option value="199">SIERRA LEONE</option>
+                            <option value="200">SINGAPORE</option>
+                            <option value="201">SINT MAARTEN (DUTCH PART)</option>
+                            <option value="202">SLOVAKIA</option>
+                            <option value="203">SLOVENIA</option>
+                            <option value="204">SOLOMON ISLANDS</option>
+                            <option value="205">SOMALIA</option>
+                            <option value="206">SOUTH AFRICA</option>
+                            <option value="207">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+                            <option value="208">SOUTH SUDAN</option>
+                            <option value="209">SPAIN</option>
+                            <option value="210">SRI LANKA</option>
+                            <option value="211">SUDAN</option>
+                            <option value="212">SURINAME</option>
+                            <option value="213">SVALBARD AND JAN MAYEN</option>
+                            <option value="214">SWAZILAND</option>
+                            <option value="215">SWEDEN</option>
+                            <option value="216">SWITZERLAND</option>
+                            <option value="217">SYRIAN ARAB REPUBLIC</option>
+                            <option value="218">TAIWAN, PROVINCE OF CHINA</option>
+                            <option value="219">TAJIKISTAN</option>
+                            <option value="220">TANZANIA, UNITED REPUBLIC OF</option>
+                            <option value="221">THAILAND</option>
+                            <option value="222">TIMOR-LESTE</option>
+                            <option value="223">TOGO</option>
+                            <option value="224">TOKELAU</option>
+                            <option value="225">TONGA</option>
+                            <option value="226">TRINIDAD AND TOBAGO</option>
+                            <option value="227">TUNISIA</option>
+                            <option value="228">TURKEY</option>
+                            <option value="229">TURKMENISTAN</option>
+                            <option value="230">TURKS AND CAICOS ISLANDS</option>
+                            <option value="231">TUVALU</option>
+                            <option value="232">UGANDA</option>
+                            <option value="233">UKRAINE</option>
+                            <option value="234">UNITED ARAB EMIRATES</option>
+                            <option value="235">UNITED KINGDOM</option>
+                            <option value="236">UNITED STATES</option>
+                            <option value="237">UNITED STATES MINOR OUTLYING ISLANDS</option>
+                            <option value="238">URUGUAY</option>
+                            <option value="239">UZBEKISTAN</option>
+                            <option value="240">VANUATU</option>
+                            <option value="241">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+                            <option value="242">VIETNAM</option>
+                            <option value="243">VIRGIN ISLANDS, BRITISH</option>
+                            <option value="244">VIRGIN ISLANDS, U.S.</option>
+                            <option value="245">WALLIS AND FUTUNA</option>
+                            <option value="246">WESTERN SAHARA</option>
+                            <option value="247">YEMEN</option>
+                            <option value="248">ZAMBIA</option>
+                            <option value="249">ZIMBABWE</option>
+                        </select>
+                    </div>
+                    <div class="mt-3 texts">
+                        <input type="text" placeholder="set title for site - page" class="titlePage">
+                    </div>
+                    <div class="mt-3 texts">
+                        <input type="text" placeholder="for page Url" class="titlePage">
+                    </div>
+                    <div class="mt-3 d-flex align-items-center">
+                        <input type="number" name="" id="frist" disabled>
+
+                        <i id="on" class="fa-solid fa-toggle-on ms-2 fs-1"></i>
+                        <i id="off" class="fa-solid fa-toggle-off active ms-2 fs-1"></i>
+                        <span class="ms-2"><sub>Total clicks limit</sub>
+                        </span>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center">
+                        <input type="number" name="" id="second" disabled>
+
+                        <i id="on1" class="fa-solid fa-toggle-on ms-2 fs-1"></i>
+                        <i id="off1" class="fa-solid fa-toggle-off active ms-2 fs-1"></i>
+                        <span class="ms-2"><sub>Daily clicks limit
+                            </sub>
+                        </span>
+                    </div>
+                    <div class="mt-3 d-flex align-items-center">
+                        <input type="number" id="cpc">
+                        <span class="ms-2"><sub>Cost/Points Per Click
+                                (from 5 to 50)
+                            </sub>
+                        </span>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <button class="mainButton"><a href="">Save Change</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <footer class="section">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-md-12 text-center text-black-50">
+                    Copyright © 2022 . all rights are save
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!--  -->
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/Conis.js"></script>
+</body>
+
+</html>
