@@ -101,4 +101,12 @@ $(document).ready(function () {
     })
   }
   changePassword();
+  $(".siadeButton").click(function () {
+    $(".massage").animate({
+      left: 0,
+
+    } , function () {
+      $(this).delay(2000).fadeOut()
+    })
+  })
 });

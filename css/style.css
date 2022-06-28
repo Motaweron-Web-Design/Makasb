@@ -33,23 +33,18 @@ a {
   border-radius: 10px;
   transition: 0.3s;
 }
-.mainButton a {
+.mainButton a , .mainButton2 a {
   font-size: 18px;
   display: inline-block;
   padding: 10px 15px;
   color: var(--blue-main);
 }
 
-.mainButton a:hover {
+.mainButton a:hover , .mainButton2 a:hover {
   color: #fff;
 }
-.mainButton:hover {
+.mainButton:hover , .mainButton2:hover {
   background-color: var(--blue-main);
-}
-.mainButton2 {
-  padding: 10px 15px;
-  font-size: 18px;
-  color: var(--blue-main);
 }
 .mainButton2:hover,
 .mainButton2.active {
@@ -81,6 +76,47 @@ section {
   border: none;
 }
 /*  */
+.massage{
+  z-index: 999999;
+  color: #fff;
+  background: hsla(152, 69%, 33%, 1);
+
+  background: linear-gradient(90deg, hsla(152, 69%, 33%, 1) 0%, hsla(152, 57%, 48%, 1) 88%);
+
+  background: -moz-linear-gradient(90deg, hsla(152, 69%, 33%, 1) 0%, hsla(152, 57%, 48%, 1) 88%);
+
+  background: -webkit-linear-gradient(90deg, hsla(152, 69%, 33%, 1) 0%, hsla(152, 57%, 48%, 1) 88%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A8C57", endColorstr="#34BF7E", GradientType=1 );
+  width: 500px;
+  padding: 15px 30px;
+  font-size: 25px;
+  text-align: center;
+  position: fixed;
+  top: 140px;
+  left: -500px;
+}
+.massage::after{
+  content: "";
+  width: 500px;
+  height: 5px;
+  /* background-color: #65eeae; */
+  background-color: #ddd;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: move 4s linear forwards;
+}
+@keyframes move{
+  0%{
+    width: 0px;
+    background-color: #16e886;
+  }
+  100%{
+    width: 500px;
+    background-color: #16e886;
+  }
+}
 .scrollTop {
   position: fixed;
   right: 20px;
@@ -359,13 +395,16 @@ footer {
   padding-top: 32px;
 }
 /* login */
-.LoginPage{
+.LoginPage , .LoginPages{
   width: 100%;
   height: 100Vh;
   margin-top: 80px;
 }
 .imgLogin{
   width: 100%;
+}
+.LoginPages{
+  min-height: auto;
 }
 .ImgAnmitan{
   mix-blend-mode: multiply;
@@ -384,8 +423,8 @@ footer {
 .LoginPage::before{
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: var(--blue-main);
   width: 0%;
   height: 1000px;
