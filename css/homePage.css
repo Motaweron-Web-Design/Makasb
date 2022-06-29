@@ -7,7 +7,7 @@
 }
 :root {
   --red-main: #b02a37;
-  --blue-main: #0a58ca;
+  --blue-main: #0077b6;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -161,16 +161,27 @@ a {
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right,#0a58ca,#2f7cec);
+    background: hsla(201, 100%, 36%, 1);
+
+    background: hsla(201, 100%, 36%, 1);
+
+    background: linear-gradient(90deg, hsla(201, 100%, 36%, 1) 0%, hsla(195, 80%, 51%, 1) 86%);
+    
+    background: -moz-linear-gradient(90deg, hsla(201, 100%, 36%, 1) 0%, hsla(195, 80%, 51%, 1) 86%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(201, 100%, 36%, 1) 0%, hsla(195, 80%, 51%, 1) 86%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0077B6", endColorstr="#1CB3E6", GradientType=1 );
+    /* background: linear-gradient(to right,#0a58ca,#2f7cec); */
     clip-path: polygon(100% 50%, 0 0, 0 100%);
     z-index: -1;
-    
   }
   .typier h2{
     font-size: 60px;
     font-weight: 800;
     padding-bottom: 15px;
   }
+
   .typier p{
     font-size: 20px;
     padding-top: 40px;
@@ -179,6 +190,7 @@ a {
     color: #fff;
     font-size: 60px;
     padding-top: 15px;
+    text-shadow: 0 3px 5px rgb(30, 30, 30 , .5);
   }
   .social {
     color: #fff;

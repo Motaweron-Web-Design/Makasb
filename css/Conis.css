@@ -7,7 +7,7 @@
 }
 :root {
   --red-main: #b02a37;
-  --blue-main: #0a58ca;
+  --blue-main: #0077b6;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -428,9 +428,9 @@ color: #fff;
   padding: 10px 15px;
   color: #fff;
 }
-.Delete:hover {
+/* .Delete:hover {
   background-color: var(--blue-main);
-}
+} */
 .Deletes{
   background-color: var(--blue-main);
   border-radius: 5px;

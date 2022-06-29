@@ -26,6 +26,7 @@ $(document).ready(function () {
             $(".typierEffect").each(function () {
                 $(this).html($(this).html() + typier[n])
                 n+=1
+
                 if (n >= typierLength) {
                 clearInterval(typierEffect)
             }

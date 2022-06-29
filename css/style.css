@@ -7,7 +7,7 @@
 }
 :root {
   --red-main: #b02a37;
-  --blue-main: #0a58ca;
+  --blue-main: #0077b6;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -432,8 +432,8 @@ footer {
 .LoginPage::before{
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 0;
+  left: 0;
   background-color: var(--blue-main);
   width: 0%;
   height: 1000px;
